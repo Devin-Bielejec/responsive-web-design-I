@@ -272,7 +272,12 @@ main{
 
      
 /* large monitors for size */
-     
+@media (min-width: 1000px){
+    body{
+        width: 1000px;
+        margin: 1% auto;
+    }
+}
 
      
 
