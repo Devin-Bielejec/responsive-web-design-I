@@ -1,3 +1,113 @@
+*{
+    border: 1px solid red;
+}
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+
+/* Base Rules - aka default styling - across all sizes*/
+body{
+    font-family: Titillium;
+}
+
+h1, h6{
+    font-family: Bangers;
+}
+
+
+nav a{
+    color: grey;
+    text-decoration: none;
+    padding: 1% 0;
+}
+
+/* LayOut - across all sizes */ 
+section, footer{
+}
+
+main{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+
+
+
+/* layout --main parts, nav, footer -- MOBILE */
+@media (min-width: 0px) and (max-width: 500px){
+    body{
+        width: 100%;
+    }
+     header{
+         display: flex;
+         flex-flow: column wrap;
+         justify-content: center;
+         align-items: center;
+     } 
+
+    #features-about{
+        display: flex;
+        flex-flow: column wrap;
+    } 
+
+    #services-product-vision{
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .title-button{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header img{
+        padding: 5% 0;
+    }
+
+    header nav{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-flow: column wrap;
+        text-align: center;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+    }
+
+    .title-button img{
+        display: none;
+    }
+
+    .title-heading{
+        display: flex;
+        flex-flow: column wrap;
+        text-align: center;
+        align-items: center;
+    }
+
+    .title-heading h1{
+        margin: 5% 0%;
+    }
+
+    .middle-image{
+        width: 100%;
+        height: auto;
+    }
+
+    
+}
+
+
+
+
+
+
+     
+     
+
+     
+
+
+}
