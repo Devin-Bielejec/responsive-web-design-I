@@ -192,11 +192,11 @@ main{
 
 
 /* layout --main parts, nav, footer -- DESKTOP */
-@media (min-width: 501px) and (max-width: 800px){
+@media (min-width: 801px){
      header{
         display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
         align-items: center;
      } 
 
@@ -212,31 +212,44 @@ main{
 
     .title-button{
         display: flex;
-        flex-flow: column wrap;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
     }
 
     /* FOR NAV */
     header img{
         padding: 5% 0;
+        margin-right: 1%;
     }
 
     header nav{
-        width: 100%;
+        width: 70%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+    }
+
+    .title-button{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 7%;
     }
 
     .title-button img{
-        display: none;
+        width: 41%;
+        height: auto;
     }
 
     .title-heading{
+        margin-left: 20%;
         display: flex;
         flex-flow: column wrap;
         text-align: center;
         align-items: center;
+        justify-self: end;
+    }
+
+    h1{
+        font-size: 4em;
     }
 
     .title-heading h1{
@@ -258,6 +271,7 @@ main{
 }
 
      
+/* large monitors for size */
      
 
      
