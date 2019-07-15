@@ -5,6 +5,7 @@
 /* Base Rules - aka default styling - across all sizes*/
 body{
     font-family: 'Titillium Web', sans-serif;
+    width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -53,10 +54,6 @@ main{
 
 /* layout --main parts, nav, footer -- MOBILE */
 @media (min-width: 0px) and (max-width: 500px){
-    body{
-        width: 100%;
-    }
-
      header{
          display: flex;
          flex-flow: column wrap;
@@ -127,30 +124,24 @@ main{
     }  
 }
 
-/* layout --main parts, nav, footer -- MOBILE */
-@media (min-width: 501px) and (max-width: 500px){
-    body{
-        width: 100%;
-    }
-
+/* layout --main parts, nav, footer -- TABLET */
+@media (min-width: 501px) and (max-width: 800px){
      header{
-         display: flex;
-         flex-flow: column wrap;
-         justify-content: center;
-         align-items: center;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
      } 
 
     #features-about{
         display: flex;
-        flex-flow: column wrap;
+        justify-content: space-around;
     } 
 
     #services-product-vision{
         display: flex;
-        flex-flow: column wrap;
+        justify-content: space-around;
     }
-
-
 
     .title-button{
         display: flex;
@@ -166,19 +157,8 @@ main{
 
     header nav{
         width: 100%;
-        height: auto;
         display: flex;
-        flex-flow: column wrap;
-        text-align: center;
-    }
-
-    header nav a{
-        border-bottom: 1px solid black;
-        border-top: 1px solid black;
-    }
-
-    header nav a:firstchild(){
-        border-top: 1px solid black;
+        justify-content: space-around;
     }
 
     .title-button img{
@@ -196,15 +176,86 @@ main{
         margin: 2% 0%;
     }
 
+    .middle-image{
+        width: 100%;
+        height: auto;
+    }
+
+    #features-about .title-paragraph{
+        width: 45%;
+    }  
+
+    #services-product-vision .title-paragraph{
+        width: 30%;
+    }
+}
+
+
+/* layout --main parts, nav, footer -- DESKTOP */
+@media (min-width: 501px) and (max-width: 800px){
+     header{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+     } 
+
+    #features-about{
+        display: flex;
+        justify-content: space-around;
+    } 
+
+    #services-product-vision{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .title-button{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* FOR NAV */
+    header img{
+        padding: 5% 0;
+    }
+
+    header nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .title-button img{
+        display: none;
+    }
+
+    .title-heading{
+        display: flex;
+        flex-flow: column wrap;
+        text-align: center;
+        align-items: center;
+    }
+
+    .title-heading h1{
+        margin: 2% 0%;
+    }
 
     .middle-image{
         width: 100%;
         height: auto;
+    }
+
+    #features-about .title-paragraph{
+        width: 45%;
     }  
+
+    #services-product-vision .title-paragraph{
+        width: 30%;
+    }
 }
-
-
-
 
      
      
